@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style>
+      .quote{
+  font-size: 1rem;
+  text-align: center;
+  opacity: 0.4;
+  margin: 1.5em 0em;
+}
+ .box{
+  background-color: #DFC5FE;
+  width: 400px;
+  height: 300px;
+  border: 15px solid #734F96;
+  padding: 50px;
+  margin-bottom: 250px;
+  margin-left: 530px;
+}
+
+.button{
+  background-color: #734F96; 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.input {
+  border: none;
+  color: #444444;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius:15px;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  display: block;
+  width: 50%;
+  transition: background 0.2s linear;
+  text-align: center;
+}
+
+    </style>
+  </head>
+  <body style="text-align: center; background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNOmnfRgXNB7iMZS0RNvosmQasuNVd5ECfJQ&usqp=CAU');">
+    
+    <div >
+      <br><br>
+      <h1>todos</h1>
+      
+      <div class="quotes-container" id="quotes-container">
+        <p class="quote" id="quote">
+        </p>
+      </div>
+      
+    <div class="box" style="text-align: center;">
+      <div style="display: flex;">
+      <input id="task-input" type="text" class="input" placeholder="Enter Ur Task" required />
+      <button class="button"  onclick="addTask()">ADD TASK</button>
+      </div>
+    
+    <div>
+      <ul id="task-list">
+      </ul>
+    </div>
+    </div>
+    </div>
+    <script src="Todo.js"></script>
+  </body>
+</html>
